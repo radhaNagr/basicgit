@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <title>check box</title>
+      <script type="text/javascript">
+        function check()
+        {
+            if(rs1.checked==true && rs2.checked==true)
+            {
+               alert("you like both choclate and vanilla")
+            }  
+
+            else if(rs1.checked==true)
+            {
+              alert("you like choclate")
+            }
+            else if(rs2.checked==true)
+            {
+              alert("you like vanilla")
+            }
+            else
+            {
+               alert("pick one")
+            }
+        }
+     
+
+    </script>
+    </head>
+<body>
+    <form>
+    <td><input type="checkbox" id="rs1">Choclate</td><br>
+    <td><input type="checkbox" id="rs2">Vanilla</td><br><br>
+    <input type="button" value="Check_order" onclick="check()">
+    </form>
+</body>
+</html>

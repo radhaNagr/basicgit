@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>matrix</title>
+</head>
+<body>
+    <script type="text/javascript">
+         a=[[1,2,3],[4,5,6],[7,8,9]]
+         b=[[1,2,3],[4,5,6],[7,8,9]]
+         c=[[],[],[]]
+         for(i=0;i<a.length;i++)
+         {
+            for(j=0;j<b.length;j++)
+            {
+                  x=0
+                  for(k=0;k<b.length;k++)
+                  {
+                    x=x+a[i][k]*b[k][j]
+                    c[i][j]=x
+                  } 
+                  document.write(c[i][j]," ")
+            }
+           document.write("<br>")
+         }
+        
+    </script>
+</body>
+</html>
